@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        #box{
+            width: 90vw;
+            height: 90vh;
+            background-color: black;
+            position: relative;
+        }
+        #ball{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0px;
+            animation: up 1s infinite ease-in-out alternate,
+                        bounce 10s infinite ease-in-out alternate;
+        }
+        @keyframes bounce{
+            to{
+                transform: translateX(calc(90vw - 100px));
+            }
+        }
+        @keyframes up{
+            to{
+                transform: translateY(calc(-60vh));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="ball"></div>
+    </div>
+</body>
+</html>
