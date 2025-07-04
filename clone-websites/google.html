@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="icon" type="image/png"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Google_Favicon_2025.svg/250px-Google_Favicon_2025.svg.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding: 5px 20px;
+        }
+        #nav-1{
+            width: 50vw;
+            font-size: 14px;
+        }
+        a{
+            text-decoration: none;
+            color: #1f1f1f;
+            padding: 10px;
+        }
+        #nav-2{
+            width: 50vw;
+            text-align: right;
+            font-size: 13px;
+        }
+        #nav-2 a{
+            padding: 0 5px;
+            /* font-size: 14px; */
+
+        }
+        #nav-2 i{
+            font-size: 18px;
+            padding: 0 0px 0 15px;
+        }
+        main{
+            text-align: center;
+        }
+        #google img{
+            height: 90px;
+            margin-top: 125px;
+        }
+        #input{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+        }
+        .search{
+            display: flex;
+            border-radius: 50px;
+            align-items: center;
+            justify-content: center;
+            padding: 2px 15px;
+            box-shadow: 0 0 5px 1px lightgray;
+        }
+        .search-icon{
+            font-size: 14px;
+            color: #9aa0a6;
+            padding: 10px;
+        }
+        .search-bar textarea{
+            width: 450px;
+            height: 16px;
+            padding: 0 10px;
+            border: none;
+            resize: none;
+            padding: 10px;
+            font-size: 18px;
+            white-space: nowrap;
+            overflow: hidden;
+            resize: none;  
+        }
+        .search-bar textarea:focus{
+            border: none;
+            outline: none;
+        }
+        .search-icons i{
+            padding: 10px;
+            color: #474747;
+        }
+        #google-search{
+            margin: 20px;
+        }
+        .but-1{
+            background-color: #f8f9fa;
+            color: #202124;
+            padding: 10px 16px;
+            margin: 11px 4px;
+            font-size: 14px;
+            border: none;
+            box-shadow: 0 0 0 transparent;
+            border: 1px solid transparent;
+            border-radius: 5px;
+        }
+        .but-1:hover{
+            box-shadow: 0 1px 1px rgba(0,0,0,.1);
+            border: 1px solid #dadce0;
+        }
+        #gemini{
+            margin-top: 40px;
+        }
+        #gemini p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+        }
+        #gemini a{
+            color: #0000EE;
+        }
+        #gemini img{
+            height: 32px
+        }
+        #language{
+            margin-top: 35px;
+            font-size: 13px;
+        }
+        #language a{
+            padding: 0px;
+            color: #0000EE;
+        }
+        footer{
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            background-color: #f2f2f2;
+            height: 100px;
+            font-size: 15px;
+        }
+        #foot-1{
+            height: 50px;
+            align-content: center;
+            padding:  0 30px;
+        }#foot-2{
+            display: flex;
+            align-items: center;
+            height: 50px;
+            font-size: 14px;
+            justify-content: space-between;
+        }
+        #foot-22{
+            padding-left: 30px;
+        }
+        #foot-2 a{
+            padding: 0px 30px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="nav-1">
+            <a href="">About</a>
+            <a href="">Store</a>
+        </div>
+        <div id="nav-2">
+            <a href="">Gmail</a>
+            <a href="">Images</a>
+            <a href=""><i class="fa-solid fa-flask"></i></a>
+            <a href=""><i class="fa-solid fa-braille"></i></a>
+            <a href=""><i id="profile" class="fa-regular fa-user"></i></a>
+        </div>
+    </nav>
+    <main>
+        <div id="google">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png">
+        </div>
+        <div id="input">
+            <div class="search">
+                <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="search-bar"><textarea></textarea></div>
+                <div class="search-icons"><i class="fa-solid fa-microphone"></i> <i class="fa-solid fa-camera"></i></div>
+            </div>
+        </div>
+        <div id="google-search">
+            <button class="but-1">Google Search</button>
+            <button class="but-1">I'm Feeling Lucky</button>
+        </div>
+        <div id="gemini">
+            <p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVO24yGG-gJLGsW4lvMrxiF-kIOSXhNKkudA&s">
+                Google Gemini, <a href="">make a playlist of 70s Hindi songs, classic rock, and pop</a>
+            </p>
+        </div>
+        <div id="language">
+            <p>
+                Google offered in: 
+                <a href="">हिन्दी</a>
+                <a href="">বাংলা</a>
+                <a href="">తెలుగు</a>
+                <a href="">मराठी</a>
+                <a href="">தமிழ்</a>
+                <a href="">ગુજરાતી</a>
+                <a href="">ಕನ್ನಡ</a>
+                <a href="">മലയാളം</a>
+                <a href="">ਪੰਜਾਬੀ</a>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div id="foot">
+            <div id="foot-1">India</div>
+            <hr>
+            <div id="foot-2">
+                <div id="foot-22">
+                    <a href="">Advertising</a>
+                    <a href="">Business</a>
+                    <a href="">How Search works</a>
+                </div>
+                <div id="foot-23">
+                    <a href="">Privacy</a>
+                    <a href="">Terms</a>
+                    <a href="">Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
